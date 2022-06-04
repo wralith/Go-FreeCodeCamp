@@ -10,7 +10,7 @@ var (
 )
 
 func Connect() {
-	dsn := "web:WebPass1!@/book-management?"
+	dsn := "web:WebPass1!@/book-management?parseTime=true"
 	d, err := gorm.Open(mysql.Open(dsn))
 	if err != nil {
 		panic(err)
